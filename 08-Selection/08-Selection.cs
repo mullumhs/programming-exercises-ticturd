@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
+using System.Net.Security;
+using System.Runtime.InteropServices;
 
 /*
 ===============================================================================
@@ -49,12 +52,23 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Variables and Input
-            Console.Write("Please enter a mark out of 100: ");
-            int mark = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What is your name?");
+            string name = Convert.ToString(Console.ReadLine());
 
             // Your code goes below here
-
+            if (name == "tikturd")
+            {
+                Console.WriteLine("fuck u");
+                
+                
+            }
+            else
+            {
+                Console.WriteLine("Go five star mason monatgue taylor");
+            }
+            Console.ReadLine();
         }
+
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 /*
 ===============================================================================
@@ -32,10 +33,11 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            string my name = "Jeff";
-            Console.ReadLine(My name is + my name);
-            Console.WriteLine()
-        {
+            string myname = "Jeff";
+            Console.WriteLine($"my name is {myname}");
+            Console.ReadLine();
+            
+        }
     }
 }
 

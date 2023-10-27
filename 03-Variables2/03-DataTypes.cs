@@ -45,9 +45,15 @@ namespace ProgrammingExercisesIST
         {
             // Your code goes below here
 
-        }Console.WriteLine(3543);
+            int bill = 7;
+            double billy = 10.1;
+            Console.WriteLine(bill);
+
+            Console.ReadLine();
+
+        }
         
-    }Console.ReadLine();
+    }
 }
 
 /*

@@ -39,7 +39,16 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            Console.WriteLine("whats ur name");
 
+         
+
+            string masontaylor = Console.ReadLine();
+            
+
+            Console.WriteLine("fuck u " + masontaylor);
+            
+            Console.ReadLine();
         }
     }
 }
