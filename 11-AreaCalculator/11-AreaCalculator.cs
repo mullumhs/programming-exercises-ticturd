@@ -50,10 +50,40 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
+            Console.WriteLine("Choose an option");
 
+            Console.WriteLine("1. Area of a Cirle");
+            Console.WriteLine("2. Area of a Rectangle");
+            Console.WriteLine("3. Area of a Triangle");
+            string choice = Console.ReadLine();
+            Console.WriteLine();
+
+            //Circle
+            if (choice == "1")
+            {
+                Console.WriteLine("Enter radius :");
+                double radius = Convert.ToDouble(Console.ReadLine());
+                double area = Math.PI * Math.Pow(radius, 2);
+                Console.WriteLine($"The area of the cirlce is {area}");
+                Console.ReadLine(); 
+            }
+            // Rectangle
+            else if(choice == "2")
+            {
+                Console.WriteLine("Enter width :");
+                double width = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Enter length :");
+                double length = Convert.ToDouble(Console.ReadLine());
+
+            }
         }
+
     }
 }
+
+
+
+
 
 /*
 ===============================================================================
