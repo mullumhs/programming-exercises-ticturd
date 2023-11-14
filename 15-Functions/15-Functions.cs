@@ -68,7 +68,7 @@ namespace ProgrammingExercisesIST
             int y = GetNumber();
 
             // Write your code here
-
+            
             
 
             // "Exit" method is called here
@@ -76,8 +76,16 @@ namespace ProgrammingExercisesIST
         }
 
         // Create your functions here
-
-
+        static int MultiplyNumbers(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+        static int GetName(string name)
+        {
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            return ("Hello 
+        }
 
         // This is a function I have written to get a number from the user
         private static int GetNumber()
