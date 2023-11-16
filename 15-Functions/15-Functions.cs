@@ -65,13 +65,14 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Get two numbers from the user
+            string name = GetName();
             int x = GetNumber();
             int y = GetNumber();
 
             // Write your code here
-            string name = GetName();
+            
             double result = MultiplyNumbers(x, y);
-        
+            Console.WriteLine($" your number is {result} ");
 
             // "Exit" method is called here
             Exit();
@@ -83,11 +84,11 @@ namespace ProgrammingExercisesIST
             double answer = (num1 * num2);
             return answer;
         }
-        static string GetName(string name)
+        static string GetName()
         {
             Console.WriteLine("Please enter your name :");
             string name = Console.ReadLine();
-            return ("Hello " + name);
+            return ("Hello " + name );
         }
         // This is a function I have written to get a number from the user
         private static int GetNumber()

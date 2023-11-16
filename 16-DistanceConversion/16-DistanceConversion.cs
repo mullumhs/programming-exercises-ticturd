@@ -48,16 +48,42 @@ namespace ProgrammingExercisesIST
         {
             // Runs the menu and stores the choice
             string choice = MainMenu();
-
             // Write your code here
-
-
+            if (choice == "1")
+            {
+                double miles = ConvertKmToMiles();
+                Console.WriteLine($"That is {miles}miles");
+            }
+            else if (choice == "2")
+            {
+                double km = ConvertMilesToKm();
+                Console.WriteLine($"That is {km}km");
+            }
+            else
+            {
+                ErrorMessage("Invalid Choice!");
+            }
             // Wait for key press before exiting
             WaitForKeyPress();
         }
 
-        // Create your functions here
 
+
+
+
+        // Create your functions here
+        private static double ConvertMilesToKm()
+        {
+            double miles = GetDistance("Miles");
+            double km = miles * 1.6;
+            return miles;
+        }
+        private static double ConvertKmToMiles(string unit)
+        {
+            double km = GetDistance("Km");
+            double miles = km / 1.6;
+                return km;
+        }
 
 
         // Asks the user to enter a distance in the unit specified
