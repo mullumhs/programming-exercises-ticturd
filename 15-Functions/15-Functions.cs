@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 /*
 ===============================================================================
@@ -68,25 +69,26 @@ namespace ProgrammingExercisesIST
             int y = GetNumber();
 
             // Write your code here
-            
-            
+            string name = GetName();
+            double result = MultiplyNumbers(x, y);
+        
 
             // "Exit" method is called here
             Exit();
         }
 
         // Create your functions here
-        static int MultiplyNumbers(int num1, int num2)
+        static double MultiplyNumbers(int num1, int num2)
         {
-            return num1 * num2;
+            double answer = (num1 * num2);
+            return answer;
         }
-        static int GetName(string name)
+        static string GetName(string name)
         {
-            Console.WriteLine("What is your name?");
+            Console.WriteLine("Please enter your name :");
             string name = Console.ReadLine();
-            return ("Hello 
+            return ("Hello " + name);
         }
-
         // This is a function I have written to get a number from the user
         private static int GetNumber()
         {
