@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 /*
 ===============================================================================
@@ -72,7 +73,12 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Write your code here
+            MainMenu();
+        }
 
+        private static void MainMenu()
+        {
+            throw new NotImplementedException();
         }
     }
 }

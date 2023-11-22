@@ -51,12 +51,12 @@ namespace ProgrammingExercisesIST
             // Write your code here
             if (choice == "1")
             {
-                double miles = ConvertKmToMiles();
+                double miles = ConvertKmToMiles(10);
                 Console.WriteLine($"That is {miles}miles");
             }
             else if (choice == "2")
             {
-                double km = ConvertMilesToKm();
+                double km = ConvertMilesToKm(10);
                 Console.WriteLine($"That is {km}km");
             }
             else
@@ -72,17 +72,17 @@ namespace ProgrammingExercisesIST
 
 
         // Create your functions here
-        private static double ConvertMilesToKm()
+        private static double ConvertMilesToKm(double unit)
         {
             double miles = GetDistance("Miles");
             double km = miles * 1.6;
-            return miles;
+            return km;
         }
-        private static double ConvertKmToMiles(string unit)
+        private static double ConvertKmToMiles(double unit)
         {
             double km = GetDistance("Km");
             double miles = km / 1.6;
-                return km;
+                return miles;
         }
 
 
