@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
+using System.Runtime.Remoting.Services;
 
 /*
 ===============================================================================
@@ -72,7 +74,31 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Write your code here
+            string choice = MainMenu();
+            if (choice == "1")
+            {
+                CelsiusToFahrenheit();
+            }
+            else if (choice == "2")
+            {
+                FahrenheitToCelsius();
+            }
+        }
 
+        private static void FahrenheitToCelsius()
+        {
+            throw new NotImplementedException();
+        }
+
+        static void CelsiusToFahrenheit()
+        {
+            
+        }
+
+        static string MainMenu()
+        {
+            Console.WriteLine("1. Celsius to Fahrenheit");
+            Console.WriteLine("2. Fahrenheit to Celsius");
         }
     }
 }
