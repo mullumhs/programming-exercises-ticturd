@@ -1,6 +1,10 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.Diagnostics.Eventing.Reader;
 using System.Runtime.Remoting.Services;
+=======
+using System.Dynamic;
+>>>>>>> 0b855bf69ffcdd6098c22fd6125b8efd11fb2728
 
 /*
 ===============================================================================
@@ -74,6 +78,7 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Write your code here
+<<<<<<< HEAD
             string choice = MainMenu();
             if (choice == "1")
             {
@@ -99,6 +104,14 @@ namespace ProgrammingExercisesIST
         {
             Console.WriteLine("1. Celsius to Fahrenheit");
             Console.WriteLine("2. Fahrenheit to Celsius");
+=======
+            MainMenu();
+        }
+
+        private static void MainMenu()
+        {
+            throw new NotImplementedException();
+>>>>>>> 0b855bf69ffcdd6098c22fd6125b8efd11fb2728
         }
     }
 }
