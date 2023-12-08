@@ -46,7 +46,7 @@ namespace ProgrammingExercisesIST
             // 1. Fix the condition of the WHILE loop so that the program works
             Console.WriteLine("Please enter a number less than 100 to continue...");
             int number = int.Parse(Console.ReadLine());
-            while (????)
+            while (number != < 100)
             {
                 Console.WriteLine("Incorrect input, try again...");
                 number = int.Parse(Console.ReadLine());

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
 
 /*
 ===============================================================================
@@ -72,11 +73,15 @@ namespace ProgrammingExercisesIST
 
 
             WaitBetween("Loop to find numbers divisible by 2:");
-            for (int i = 100; i <= 199; i+=3)
+            for (int n = 100; n <= 199; n+=3)
             {
-                if i == 42)
+                if (n % 2 == 0)
                 {
-
+                    Console.WriteLine("Found");
+                }
+                else
+                {
+                    Console.WriteLine(n);
                 }
             }
 
